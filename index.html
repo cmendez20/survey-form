@@ -8,6 +8,60 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-<h1>test</h1>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Let us know how we can improve freeCodeCamp
+    </p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="Enter your name">
+      <br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <br>
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="100" required>
+
+      <br>
+      <label>Which option best describes your current role?  <select name="role" id="dropdown"> 
+      <option value="Select an option" disabled>Select an option</option> 
+      <option value="Student" selected>Student</option> 
+      <option value="Full-time Job">Full-time Job</option> 
+      <option value="Full-time Learner">Full-time Learner</option> 
+      <option value="Prefer not to say">Prefer not to say</option> 
+      <option value="Other">Other</option>
+      </select></label>
+      <br>
+      <fieldset class="radio-form">
+        <legend>How likely is that you would recommend freeCodeCamp to a friend?</legend>
+        <input id="definately" type="radio" name="radio-group" value="definately"> 
+        <label for="definately">Definately</label>
+        <input id="maybe" type="radio" name="radio-group" value="maybe"> 
+        <label for="maybe">Maybe</label>
+        <input id="not-sure" type="radio" name="radio-group" value="not-sure">
+        <label for="not-sure">Not Sure</label>
+      </fieldset>
+
+
+      <p>Things that should be improved in the future
+          (Check all that apply):</p>
+      <label for="front-end"><input id="front-end" value="front-end" type="checkbox" name="improvement">Front-end Projects</label><br>
+      <label for="back-end"><input id="back-end" value="back-end" type="checkbox" name="improvement">Back-end Projects</label><br>
+      <label for="data-visualization"><input id="data-visualization" value="data-visualization" type="checkbox" name="improvement">Data Visualization</label><br>
+      <label for="challenges"><input id="challenges" type="checkbox" value="challenges" name="improvement">Challenges</label><br>
+      <label for="videos"><input id="videos" value="videos" type="checkbox" name="improvement">Videos</label>
+      <br>
+      
+      <label>Any Comments or Suggestions?</label><br><textarea name="comment">Enter your comment here</textarea>
+      <input id="submit" type="submit" name="submit" value="Submit">
+
+      
+    </form>
+  </main>
 </body>
 </html>
