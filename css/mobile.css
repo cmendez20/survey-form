@@ -1,0 +1,29 @@
+@media only screen and (max-width: 700px) {
+  #header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p#description {
+    max-width: 30rem;
+  }
+
+  body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  .p-heading {
+    margin-bottom: .5rem;
+  }
+
+  #survey-form {
+    margin: auto;
+    padding: 3rem;
+    max-width: 35rem;
+  }
+
+  #textarea {
+    margin-top: .5rem;
+  }
+}
